@@ -48,7 +48,7 @@ class Song
     count = {}
     @@genres.each do |genre|
       if count[genre] == nil
-        count[genre] = @@genre.count(genre)
+        count[genre] = @@genres.count(genre)
       end
     end
   count
