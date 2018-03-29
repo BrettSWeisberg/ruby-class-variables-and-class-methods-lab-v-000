@@ -15,7 +15,6 @@ class Song
     @genre = genre
     @@count += 1
 
-    if @@genres.count(genre) == 0
      @@genres << genres
   end
 
@@ -24,7 +23,7 @@ class Song
   end
 
   def self.genres
-    @@genres
+    @@genres.uniq
    end
   end
 
