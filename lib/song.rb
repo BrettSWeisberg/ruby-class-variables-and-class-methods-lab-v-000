@@ -23,8 +23,12 @@ class Song
   end
 
   def self.genres
-    @@genres.uniq!
+    new_array = []
+    @@genres.each do |genres|
+      if new_array.count(genres) == 0
+        new_array << genres
    end
+   new_array
   end
 
   def artists(artist)
