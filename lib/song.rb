@@ -16,7 +16,7 @@ class Song
     @genre = genre
     @@count += 1
     @@genres << genre
-    @@artist << ar
+    @@artist << artist
 
   end
 
@@ -26,9 +26,9 @@ class Song
 
   def self.genres
     new_array = []
-    @@genres.each do |genres|
-      if new_array.count(genres) == 0
-        new_array << genres
+    @@genres.each do |genre|
+      if new_array.count(genre) == 0
+        new_array << genre
       end
     end
    new_array
