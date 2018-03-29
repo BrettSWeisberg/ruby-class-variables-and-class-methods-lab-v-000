@@ -44,10 +44,15 @@ class Song
    new_array
   end
 
-  def self.genre_count(genre)
+  def self.genre_count
     count = {}
-  count[genre] = @@genre.count(genre)
-  end
+    @@genre each do |genre|
+      if count[genre] == nil
+        count[genre] = @@genre.count(genre)
+      end
+    end
+  count
+end
 
 
 
