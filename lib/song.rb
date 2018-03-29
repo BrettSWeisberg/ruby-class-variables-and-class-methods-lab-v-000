@@ -34,11 +34,14 @@ class Song
    new_array
   end
 
-  def artists(artist)
-    array_artists = []
-    if array_artists.count(artist) == 0
-      array_artists << artist
+  def artists
+    new_array = []
+    @@artists.each do |artist|
+      if new_array.count(artist) == 0
+        new_array << artist
+      end
     end
+   new_array
   end
 
 
