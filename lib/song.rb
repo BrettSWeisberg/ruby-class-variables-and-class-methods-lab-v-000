@@ -44,7 +44,7 @@ class Song
    new_array
   end
 
-  def self.genre_count
+  def self.genre_count(genre)
     count = {}
   count[genre] = @@genre.count(genre)
   end
