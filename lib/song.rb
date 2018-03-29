@@ -34,7 +34,7 @@ class Song
    new_array
   end
 
-  def artists
+  def self.artists
     new_array = []
     @@artists.each do |artist|
       if new_array.count(artist) == 0
