@@ -58,7 +58,7 @@ def self.artist_count
   count = {}
   @@artists.each do |artist|
     if count[artist] == nil
-      count[artist] = @@artists.count(genre)
+      count[artist] = @@artists.count(artist)
     end
   end
 count
