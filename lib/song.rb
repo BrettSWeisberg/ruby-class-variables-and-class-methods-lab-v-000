@@ -1,7 +1,7 @@
 
 class Song
   attr_accessor :name, :artist, :genre
-  
+
 
   @@count = 0
   @@genres = []
@@ -43,7 +43,6 @@ class Song
     end
    new_array
   end
-
 
 
 
