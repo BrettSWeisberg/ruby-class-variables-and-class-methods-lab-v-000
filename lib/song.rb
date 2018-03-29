@@ -27,7 +27,8 @@ class Song
     @@genres.each do |genres|
       if new_array.count(genres) == 0
         new_array << genres
-   end
+      end
+    end
    new_array
   end
 
